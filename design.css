@@ -1,0 +1,263 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box ;
+    
+    background-size: contain;
+}
+.container{
+    width: 100%;
+    /* height: 100rem; */
+    min-height: 100vh;
+    /* background: linear-gradient(to right, skyblue, orange, blue); */
+    color: #fff;
+    padding: 10px;
+    background-image: url(./assets/jess-bailey-q10VITrVYUM-unsplash\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: bounce 25s infinite alternate;
+
+    
+}
+.calculator{
+    position: absolute;
+    transform: translate(30%, 20%);
+    /* text-transform: ; */
+    width: 100%;
+    max-width: 600px;
+    margin-left: 10%;
+    margin-top: 10%;
+    
+
+}
+.calculator h1{
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.calculator h1 span{
+    color: #FFFF76;
+}
+#date{
+    border-radius: 1rem;
+    border: transparent;
+}
+button{
+    border: transparent;
+    border-radius: 1rem;
+  margin: 0.5rem;
+    width: 6rem;
+    height: 2rem;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: #333;
+    background: #FFFF76;
+    outline: 0;
+   cursor: pointer;
+   
+}
+.box{
+    padding:35px;
+    margin: 40px 0;
+    border-radius: 10px;
+   display: flex;
+   align-items: center;
+   background: rgba(255,255,255,0.3);
+   
+}
+.box input{
+    flex: 1;
+    margin-right: 20px;
+    padding: 14px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    /* border-radius: 5px; */
+    position: relative;
+    font-weight: bolder;
+}
+.box input::-webkit-calendar-picker-indicator{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 30px ;
+    cursor: pointer;
+}
+#result{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#result span{
+    color: #FFFF76;
+}
+
+@keyframes bounce{
+    10%{
+        background-image: url(/assets/bench-accounting-nvzvOPQW0gc-unsplash.jpg);
+        background-size: cover;
+    }
+    20%{
+        background-image: url(/assets/nasa.jpg);
+        background-size: cover;
+    }
+    40%{
+        background-image: url(/assets/pen.jpg);
+        background-size: cover;
+    }
+    60%{
+        background-image: url(/assets/nasa2.jpg);
+        background-size: cover;
+    }
+    80%{
+        background-image: url(/assets/sky.jpg);
+        background-size: cover;
+    }
+    90%{
+        background: linear-gradient(blue, pink, orange);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1{
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+    }
+    .container {
+        padding: 5px;
+    }
+
+    .calculator {
+        transform: translate(0, 0);
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .calculator h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .box {
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .box input {
+        margin: 10px 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        height: 3rem;
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    #result {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer .social-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .social-media a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+.footer p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.footer p:hover {
+color: #FFFF76;
+}
+
+/* .back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    background-color: #333;
+    color: red;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #555;
+} */
+
+
+
+
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-link {
+    display: flex;
+    align-items: center;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.whatsapp-link:hover {
+    background-color: #1EBE5E;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
